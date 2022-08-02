@@ -13,4 +13,12 @@ class CalculatorInteractor:PresenterToInteractorCalculatorProtocol{
     func processCalculate(amount: Double, rate: Double, fromCurrency: String, endCurrency: String) {
         presenter?.calculatorProcessSuccess(from: "\(String(format: "%.2f", amount)) \(fromCurrency)", end: "\(String(format: "%.2f", (amount * rate))) \(endCurrency)")
     }
+    
+    func countDown(count: Int) {
+        var count = count
+        if(count > 0) {
+            count = count - 1
+            presenter?.displayCountDown(count: count)
+        }
+    }
 }

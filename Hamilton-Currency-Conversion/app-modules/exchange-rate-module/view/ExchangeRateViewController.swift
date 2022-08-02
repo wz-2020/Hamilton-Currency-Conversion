@@ -40,32 +40,8 @@ class ExchangeRateViewController: UIViewController {
         
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ExchangeRateViewController.dismissKeyboard))
             view.addGestureRecognizer(tap)
-        /*
-        let currencies = fetchAvailableCurrency()
-        for currency in currencies {
-            ExchangeRateManager.exchangeRate(currency: currency) { exchangeRate in
-                
-            }
-        }*/
+         
     }
-    /*
-    func fetchAvailableCurrency() -> [String] {
-        var propertyListFormat =  PropertyListSerialization.PropertyListFormat.xml
-        var plistData: [String: AnyObject] = [:]
-        let plistPath: String? = Bundle.main.path(forResource: "settings", ofType: "plist")!
-        let plistXML = FileManager.default.contents(atPath: plistPath!)!
-        do {//convert the data to a dictionary and handle errors.
-            plistData = try PropertyListSerialization.propertyList(from: plistXML, options: .mutableContainersAndLeaves, format: &propertyListFormat) as! [String:AnyObject]
-            if let currencyArray = plistData["supported_currency"] as? [String] {
-                 return currencyArray
-            } else {
-                return []
-            }
-        } catch {
-            return []
-        }
-  
-    }*/
     
     // tap screen dismiss keyboard.
     @objc func dismissKeyboard() {

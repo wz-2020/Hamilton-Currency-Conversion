@@ -9,17 +9,17 @@ import Foundation
 import UIKit
 
 class CalculatorRouter:PresenterToRouterCalculatorProtocol{
+    func navigateToExchangeRateScreen(navigationController: UINavigationController) {
+        navigationController.popViewController(animated: true)
+    }
+    
     func presentToCalculatorSuccessScreen(viewController: CalculatorViewController, amount: Double, rate: Double, endCurrency: String) {
         
         let vc = UIStoryboard(name:"Main",bundle: Bundle.main).instantiateViewController(withIdentifier: "SuccessViewController") as! SuccessViewController
         
         vc.text = NSLocalizedString("Success_Message", comment: "")
-        
- 
         vc.modalPresentationStyle = .fullScreen
-        
         viewController.present(vc, animated: true, completion: nil)
-        //navigationController.pushViewController(view,animated: true)
     }
     
     func showCalculatorAlert(viewController: CalculatorViewController) {
@@ -33,15 +33,11 @@ class CalculatorRouter:PresenterToRouterCalculatorProtocol{
             self.presentToCalculatorSuccessScreen(viewController: viewController, amount: 0, rate: 0, endCurrency: "")
         }
 
- 
         alert.addAction(cancelButton)
         alert.addAction(approveButton)
-            
-
         viewController.present(alert, animated: true, completion: nil)
     }
     
-
     static func createCalculatorModule(amount: Double, rate: Double, fromCurrency: String, endCurrency: String) -> CalculatorViewController {
         
         let view = CalculatorRouter.mainstoryboard.instantiateViewController(withIdentifier: "CalculatorViewController") as! CalculatorViewController

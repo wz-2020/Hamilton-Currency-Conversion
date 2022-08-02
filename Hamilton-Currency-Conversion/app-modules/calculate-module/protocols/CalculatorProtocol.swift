@@ -17,13 +17,17 @@ protocol ViewToPresenterCalculatorProtocol {
     var rate: Double? { get set }
     var fromCurrency: String? { get set }
     var endCurrency: String? { get set }
+    
     func startCalculate()
+    func startCountDown(count: Int)
     func showConfirmConvertAlert(viewController: CalculatorViewController)
+    func navigateToExchangeRateScreen(navigationController: UINavigationController)
 }
 
 protocol PresenterToViewCalculatorProtocol {
 
     func onCalculatorProcessSuccess(from: String, end: String)
+    func displayCountDown(count: Int)
 }
 
 protocol PresenterToRouterCalculatorProtocol {
@@ -32,12 +36,14 @@ protocol PresenterToRouterCalculatorProtocol {
     
     func showCalculatorAlert(viewController: CalculatorViewController)
     func presentToCalculatorSuccessScreen(viewController: CalculatorViewController, amount: Double, rate: Double, endCurrency: String)
+    func navigateToExchangeRateScreen(navigationController:UINavigationController)
 }
 
 protocol PresenterToInteractorCalculatorProtocol {
     
     var presenter:InteractorToPresenterCalculatorProtocol? {get set}
     func processCalculate(amount: Double, rate: Double, fromCurrency: String, endCurrency: String)
+    func countDown(count: Int)
     
 }
 
@@ -45,5 +51,5 @@ protocol InteractorToPresenterCalculatorProtocol {
     
     func calculatorProcessSuccess(from: String, end: String)
  
-    
+    func displayCountDown(count: Int)
 }

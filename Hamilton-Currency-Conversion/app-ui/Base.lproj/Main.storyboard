@@ -128,20 +128,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zgx-lZ-Xq8">
-                                <rect key="frame" x="171.5" y="345" width="71.5" height="33.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zgx-lZ-Xq8">
+                                <rect key="frame" x="207" y="395" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dC8-Bs-5e2">
-                                <rect key="frame" x="171.5" y="431.5" width="71.5" height="33.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dC8-Bs-5e2">
+                                <rect key="frame" x="207" y="448" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="precedes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GAA-q1-J00">
-                                <rect key="frame" x="171" y="394.5" width="72" height="21"/>
+                                <rect key="frame" x="171" y="411" width="72" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -163,6 +163,12 @@
                                     <action selector="convertButtonClicked:" destination="q8O-UA-bQJ" eventType="touchUpInside" id="kCW-AH-0co"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I7S-yh-vJM">
+                                <rect key="frame" x="207" y="492" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0Zf-3c-Ivx"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -171,14 +177,17 @@
                             <constraint firstItem="dC8-Bs-5e2" firstAttribute="top" secondItem="GAA-q1-J00" secondAttribute="bottom" constant="16" id="5q8-Hl-83X"/>
                             <constraint firstItem="GAA-q1-J00" firstAttribute="top" secondItem="Zgx-lZ-Xq8" secondAttribute="bottom" constant="16" id="6Bq-Xi-8dv"/>
                             <constraint firstItem="dC8-Bs-5e2" firstAttribute="centerY" secondItem="3ja-hg-dEN" secondAttribute="centerY" id="6MU-UQ-jk7"/>
+                            <constraint firstItem="I7S-yh-vJM" firstAttribute="centerX" secondItem="3ja-hg-dEN" secondAttribute="centerX" id="B4L-VD-pa9"/>
                             <constraint firstItem="Zgx-lZ-Xq8" firstAttribute="centerX" secondItem="3ja-hg-dEN" secondAttribute="centerX" id="Emn-D2-KBV"/>
                             <constraint firstItem="0Zf-3c-Ivx" firstAttribute="bottom" secondItem="HxB-5L-1K9" secondAttribute="bottom" constant="44" id="TS0-Ea-TwN"/>
+                            <constraint firstItem="I7S-yh-vJM" firstAttribute="top" secondItem="dC8-Bs-5e2" secondAttribute="bottom" constant="44" id="aPd-yC-sjT"/>
                             <constraint firstItem="dC8-Bs-5e2" firstAttribute="centerX" secondItem="3ja-hg-dEN" secondAttribute="centerX" id="ntJ-MX-XYA"/>
                             <constraint firstItem="HxB-5L-1K9" firstAttribute="centerX" secondItem="3ja-hg-dEN" secondAttribute="centerX" id="rrq-rC-fcs"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="fromLabel" destination="Zgx-lZ-Xq8" id="XH2-p3-aIf"/>
+                        <outlet property="timerLabel" destination="I7S-yh-vJM" id="aUp-4L-q2z"/>
                         <outlet property="toLabel" destination="dC8-Bs-5e2" id="EQu-Ns-HPq"/>
                     </connections>
                 </viewController>
