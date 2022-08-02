@@ -19,7 +19,6 @@
 		C096BF6C289934710066690F /* ExchangeRateProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = C096BF6B289934710066690F /* ExchangeRateProtocols.swift */; };
 		C096BF6E289937310066690F /* ExchangeRateModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C096BF6D289937310066690F /* ExchangeRateModel.swift */; };
 		C096BF70289938600066690F /* ExchangeRateInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C096BF6F289938600066690F /* ExchangeRateInteractor.swift */; };
-		C096BF7228993BF10066690F /* HttpRequestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C096BF7128993BF10066690F /* HttpRequestHelper.swift */; };
 		C096BF7528993F3C0066690F /* ExchangeRateRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C096BF7428993F3C0066690F /* ExchangeRateRouter.swift */; };
 		C096BF7728993FA20066690F /* ExchangeRatePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C096BF7628993FA20066690F /* ExchangeRatePresenter.swift */; };
 		C096BF7B289951370066690F /* two-way-arrows.png in Resources */ = {isa = PBXBuildFile; fileRef = C096BF7A289951370066690F /* two-way-arrows.png */; };
@@ -71,7 +70,6 @@
 		C096BF6B289934710066690F /* ExchangeRateProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateProtocols.swift; sourceTree = "<group>"; };
 		C096BF6D289937310066690F /* ExchangeRateModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateModel.swift; sourceTree = "<group>"; };
 		C096BF6F289938600066690F /* ExchangeRateInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateInteractor.swift; sourceTree = "<group>"; };
-		C096BF7128993BF10066690F /* HttpRequestHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequestHelper.swift; sourceTree = "<group>"; };
 		C096BF7428993F3C0066690F /* ExchangeRateRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateRouter.swift; sourceTree = "<group>"; };
 		C096BF7628993FA20066690F /* ExchangeRatePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRatePresenter.swift; sourceTree = "<group>"; };
 		C096BF7A289951370066690F /* two-way-arrows.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "two-way-arrows.png"; sourceTree = "<group>"; };
@@ -147,7 +145,6 @@
 				C096BF62289932AE0066690F /* app-ui */,
 				C096BF3B289931100066690F /* Assets.xcassets */,
 				C096BF40289931100066690F /* Info.plist */,
-				C096BF7128993BF10066690F /* HttpRequestHelper.swift */,
 				C096BF7E289958B90066690F /* settings.plist */,
 				C096BFB028999E930066690F /* ExchangeRateManager.swift */,
 			);
@@ -477,7 +474,6 @@
 				C096BF7728993FA20066690F /* ExchangeRatePresenter.swift in Sources */,
 				C096BF332899310E0066690F /* AppDelegate.swift in Sources */,
 				C096BF6C289934710066690F /* ExchangeRateProtocols.swift in Sources */,
-				C096BF7228993BF10066690F /* HttpRequestHelper.swift in Sources */,
 				C096BFA228998C650066690F /* SuccessViewController.swift in Sources */,
 				C096BFB128999E940066690F /* ExchangeRateManager.swift in Sources */,
 				C096BF352899310E0066690F /* SceneDelegate.swift in Sources */,
