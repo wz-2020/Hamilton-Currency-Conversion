@@ -35,6 +35,7 @@ protocol PresenterToRouterProtocol {
 protocol PresenterToInteractorProtocol {
     var presenter:InteractorToPresenterProtocol? {get set}
     func fetchExchangeRate(from currency1: String, to currency2: String)
+    func fetchAvailableCurrency()
  
 }
 
