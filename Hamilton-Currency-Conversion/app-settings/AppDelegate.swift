@@ -29,6 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
     
+    // Refresh Exchange Rate every 5 hours.
     func doBackgroundTask() {
         DispatchQueue.global(qos: .default).async {
             self.beginBackgroundTask()
@@ -74,6 +75,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
     
+    // Plist
     func fetchAvailableCurrency() -> [String] {
         var propertyListFormat =  PropertyListSerialization.PropertyListFormat.xml
         var plistData: [String: AnyObject] = [:]
