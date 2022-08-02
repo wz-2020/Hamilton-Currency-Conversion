@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Exchange Rate View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ExchangeRateViewController" id="BYZ-38-t0r" customClass="ExchangeRateViewController" customModule="Hamilton_Currency_Conversion" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="02I-CP-TD6">
+                                <rect key="frame" x="89" y="277.5" width="80" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Ehc-I3-xdL"/>
+                                    <constraint firstAttribute="width" constant="80" id="z3W-IB-jBn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="two-way-arrows.png" translatesAutoresizingMaskIntoConstraints="NO" id="Q01-2p-pea">
+                                <rect key="frame" x="185" y="277.5" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="7Na-TP-Gyi"/>
+                                    <constraint firstAttribute="width" constant="44" id="dJL-N4-jmr"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow-down.png" translatesAutoresizingMaskIntoConstraints="NO" id="BcD-cB-ER0">
+                                <rect key="frame" x="137" y="284.5" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="LSd-Sq-27M"/>
+                                    <constraint firstAttribute="height" constant="30" id="laS-zA-6vW"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wS7-xx-jPY">
+                                <rect key="frame" x="245" y="277.5" width="80" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="dU7-lv-POC"/>
+                                    <constraint firstAttribute="width" constant="80" id="gmK-dM-LfU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow-down.png" translatesAutoresizingMaskIntoConstraints="NO" id="zB9-fR-IRq">
+                                <rect key="frame" x="293" y="284.5" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="BK2-wj-YDN"/>
+                                    <constraint firstAttribute="height" constant="30" id="bm7-ED-kK7"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bbP-nt-0lG">
+                                <rect key="frame" x="89" y="381.5" width="60" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x6G-Z1-BYB">
+                                <rect key="frame" x="89" y="418" width="236" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="0ri-Ta-1Nd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ajU-Hu-2UY">
+                                <rect key="frame" x="89" y="494" width="236" height="34"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Calculate">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="calculatorButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3hy-hr-bQO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ajU-Hu-2UY" firstAttribute="leading" secondItem="x6G-Z1-BYB" secondAttribute="leading" id="29a-Jm-xlW"/>
+                            <constraint firstItem="zB9-fR-IRq" firstAttribute="centerY" secondItem="wS7-xx-jPY" secondAttribute="centerY" id="5E6-Zh-Fc2"/>
+                            <constraint firstItem="x6G-Z1-BYB" firstAttribute="top" secondItem="bbP-nt-0lG" secondAttribute="bottom" constant="16" id="CI8-Vl-IQs"/>
+                            <constraint firstItem="wS7-xx-jPY" firstAttribute="centerY" secondItem="Q01-2p-pea" secondAttribute="centerY" id="JEr-R0-UHJ"/>
+                            <constraint firstItem="x6G-Z1-BYB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="PyB-vt-gIY"/>
+                            <constraint firstItem="bbP-nt-0lG" firstAttribute="top" secondItem="Q01-2p-pea" secondAttribute="bottom" constant="60" id="UR0-bF-4eH"/>
+                            <constraint firstItem="ajU-Hu-2UY" firstAttribute="top" secondItem="x6G-Z1-BYB" secondAttribute="bottom" constant="16" id="XQP-1y-FYB"/>
+                            <constraint firstItem="wS7-xx-jPY" firstAttribute="leading" secondItem="Q01-2p-pea" secondAttribute="trailing" constant="16" id="cwm-o6-IDE"/>
+                            <constraint firstItem="zB9-fR-IRq" firstAttribute="trailing" secondItem="wS7-xx-jPY" secondAttribute="trailing" constant="-2" id="dkz-3h-LMa"/>
+                            <constraint firstItem="02I-CP-TD6" firstAttribute="centerY" secondItem="Q01-2p-pea" secondAttribute="centerY" id="ml9-mO-Fot"/>
+                            <constraint firstItem="Q01-2p-pea" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mst-NQ-U9b"/>
+                            <constraint firstItem="bbP-nt-0lG" firstAttribute="leading" secondItem="02I-CP-TD6" secondAttribute="leading" id="oBz-ZB-tn0"/>
+                            <constraint firstItem="BcD-cB-ER0" firstAttribute="centerY" secondItem="02I-CP-TD6" secondAttribute="centerY" id="q9u-CU-z2y"/>
+                            <constraint firstItem="Q01-2p-pea" firstAttribute="leading" secondItem="02I-CP-TD6" secondAttribute="trailing" constant="16" id="t2u-hv-isA"/>
+                            <constraint firstItem="x6G-Z1-BYB" firstAttribute="trailing" secondItem="wS7-xx-jPY" secondAttribute="trailing" id="ucx-DB-6ds"/>
+                            <constraint firstItem="BcD-cB-ER0" firstAttribute="trailing" secondItem="02I-CP-TD6" secondAttribute="trailing" constant="-2" id="vWk-Sx-OXn"/>
+                            <constraint firstItem="x6G-Z1-BYB" firstAttribute="leading" secondItem="02I-CP-TD6" secondAttribute="leading" id="yso-qt-oiq"/>
+                            <constraint firstItem="ajU-Hu-2UY" firstAttribute="trailing" secondItem="x6G-Z1-BYB" secondAttribute="trailing" id="zg6-wc-kJl"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="amountTextField" destination="x6G-Z1-BYB" id="PQT-Qk-v6P"/>
+                        <outlet property="calculateButton" destination="ajU-Hu-2UY" id="0li-LU-kQB"/>
+                        <outlet property="fromTextField" destination="02I-CP-TD6" id="YpO-lQ-QDB"/>
+                        <outlet property="toTextField" destination="wS7-xx-jPY" id="4Au-hI-spJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="82.366071428571431"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow-down.png" width="225" height="225"/>
+        <image name="two-way-arrows.png" width="1920" height="1920"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
