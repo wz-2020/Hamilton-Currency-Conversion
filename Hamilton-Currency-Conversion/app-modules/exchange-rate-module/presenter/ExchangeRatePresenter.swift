@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 
 class ExchangeRatePresenter:ViewToPresenterProtocol {
+    
     var view: PresenterToViewProtocol?
     
     var interactor: PresenterToInteractorProtocol?
@@ -23,8 +24,8 @@ class ExchangeRatePresenter:ViewToPresenterProtocol {
         interactor?.fetchAvailableCurrency()
     }
     
-    func showMovieController(navigationController: UINavigationController) {
-        router?.pushToMovieScreen(navigationConroller:navigationController)
+    func showCalculatorController(navigationController: UINavigationController, amount: Double, rate: Double, fromCurrency: String, endCurrency: String) {
+        router?.pushToCalculatorScreen(navigationConroller:navigationController, amount: amount, rate: rate, fromCurrency: fromCurrency, endCurrency: endCurrency)
     }
 
 }

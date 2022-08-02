@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  Hamilton-Currency-Conversion
+
+  Created by Wanchun Zhang on 02/08/2022.
+  
+*/
+"Alert_Title" = "Approval Required";
+"Alert_Message" = "You are about to get %s for %s. Do you approve this transaction?";
+"Success_Message" = "Great now you have %s in your account
+
+Your convertion rate was %s";

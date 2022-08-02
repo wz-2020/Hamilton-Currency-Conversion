@@ -31,11 +31,10 @@ class ExchangeRateRouter:PresenterToRouterProtocol{
         return UIStoryboard(name:"Main",bundle: Bundle.main)
     }
     
-    func pushToMovieScreen(navigationConroller navigationController:UINavigationController) {
+    func pushToCalculatorScreen(navigationConroller navigationController:UINavigationController, amount: Double, rate: Double, fromCurrency: String, endCurrency: String) {
         
-        //let movieModue = MovieRouter.createMovieModule()
-        //navigationController.pushViewController(movieModue,animated: true)
-        
+        let calculatorModue = CalculatorRouter.createCalculatorModule(amount: amount, rate: rate, fromCurrency: fromCurrency, endCurrency: endCurrency)
+        navigationController.pushViewController(calculatorModue,animated: true)
     }
     
 }

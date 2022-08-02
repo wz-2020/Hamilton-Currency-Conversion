@@ -25,6 +25,16 @@
 		C096BF7B289951370066690F /* two-way-arrows.png in Resources */ = {isa = PBXBuildFile; fileRef = C096BF7A289951370066690F /* two-way-arrows.png */; };
 		C096BF7D2899527B0066690F /* arrow-down.png in Resources */ = {isa = PBXBuildFile; fileRef = C096BF7C2899527B0066690F /* arrow-down.png */; };
 		C096BF7F289958B90066690F /* settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = C096BF7E289958B90066690F /* settings.plist */; };
+		C096BF8528996AAA0066690F /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C096BF8428996AAA0066690F /* CalculatorViewController.swift */; };
+		C096BF8828996B630066690F /* CalculatorRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C096BF8728996B630066690F /* CalculatorRouter.swift */; };
+		C096BF8B28996BC30066690F /* CalculatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C096BF8A28996BC30066690F /* CalculatorProtocol.swift */; };
+		C096BF8E28996DBA0066690F /* CalculatorPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C096BF8D28996DBA0066690F /* CalculatorPresenter.swift */; };
+		C096BF922899799B0066690F /* CalculatorInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C096BF912899799B0066690F /* CalculatorInteractor.swift */; };
+		C096BF9A289985850066690F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C096BF9C289985850066690F /* Localizable.strings */; };
+		C096BF9E28998C290066690F /* gree-tick.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C096BF9D28998C290066690F /* gree-tick.jpg */; };
+		C096BFA228998C650066690F /* SuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C096BFA128998C650066690F /* SuccessViewController.swift */; };
+		C096BFAF289999520066690F /* right-arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = C096BFAE289999520066690F /* right-arrow.png */; };
+		C096BFB128999E940066690F /* ExchangeRateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C096BFB028999E930066690F /* ExchangeRateManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +77,16 @@
 		C096BF7A289951370066690F /* two-way-arrows.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "two-way-arrows.png"; sourceTree = "<group>"; };
 		C096BF7C2899527B0066690F /* arrow-down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow-down.png"; sourceTree = "<group>"; };
 		C096BF7E289958B90066690F /* settings.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = settings.plist; sourceTree = "<group>"; };
+		C096BF8428996AAA0066690F /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
+		C096BF8728996B630066690F /* CalculatorRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorRouter.swift; sourceTree = "<group>"; };
+		C096BF8A28996BC30066690F /* CalculatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorProtocol.swift; sourceTree = "<group>"; };
+		C096BF8D28996DBA0066690F /* CalculatorPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorPresenter.swift; sourceTree = "<group>"; };
+		C096BF912899799B0066690F /* CalculatorInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorInteractor.swift; sourceTree = "<group>"; };
+		C096BF9B289985850066690F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C096BF9D28998C290066690F /* gree-tick.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "gree-tick.jpg"; sourceTree = "<group>"; };
+		C096BFA128998C650066690F /* SuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessViewController.swift; sourceTree = "<group>"; };
+		C096BFAE289999520066690F /* right-arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "right-arrow.png"; sourceTree = "<group>"; };
+		C096BFB028999E930066690F /* ExchangeRateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +117,7 @@
 		C096BF262899310E0066690F = {
 			isa = PBXGroup;
 			children = (
+				C096BF9C289985850066690F /* Localizable.strings */,
 				C096BF312899310E0066690F /* Hamilton-Currency-Conversion */,
 				C096BF48289931110066690F /* Hamilton-Currency-ConversionTests */,
 				C096BF52289931110066690F /* Hamilton-Currency-ConversionUITests */,
@@ -117,6 +138,8 @@
 		C096BF312899310E0066690F /* Hamilton-Currency-Conversion */ = {
 			isa = PBXGroup;
 			children = (
+				C096BFAE289999520066690F /* right-arrow.png */,
+				C096BF9D28998C290066690F /* gree-tick.jpg */,
 				C096BF7C2899527B0066690F /* arrow-down.png */,
 				C096BF7A289951370066690F /* two-way-arrows.png */,
 				C096BF64289933C50066690F /* app-modules */,
@@ -126,6 +149,7 @@
 				C096BF40289931100066690F /* Info.plist */,
 				C096BF7128993BF10066690F /* HttpRequestHelper.swift */,
 				C096BF7E289958B90066690F /* settings.plist */,
+				C096BFB028999E930066690F /* ExchangeRateManager.swift */,
 			);
 			path = "Hamilton-Currency-Conversion";
 			sourceTree = "<group>";
@@ -168,6 +192,7 @@
 		C096BF64289933C50066690F /* app-modules */ = {
 			isa = PBXGroup;
 			children = (
+				C096BF9F28998C440066690F /* success-module */,
 				C096BF80289969B20066690F /* calculate-module */,
 				C096BF65289933DC0066690F /* exchange-rate-module */,
 			);
@@ -238,6 +263,10 @@
 		C096BF80289969B20066690F /* calculate-module */ = {
 			isa = PBXGroup;
 			children = (
+				C096BF902899797D0066690F /* interactor */,
+				C096BF8C28996D900066690F /* presenter */,
+				C096BF8928996B9D0066690F /* protocols */,
+				C096BF8628996B1A0066690F /* router */,
 				C096BF81289969C50066690F /* view */,
 			);
 			path = "calculate-module";
@@ -246,6 +275,55 @@
 		C096BF81289969C50066690F /* view */ = {
 			isa = PBXGroup;
 			children = (
+				C096BF8428996AAA0066690F /* CalculatorViewController.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		C096BF8628996B1A0066690F /* router */ = {
+			isa = PBXGroup;
+			children = (
+				C096BF8728996B630066690F /* CalculatorRouter.swift */,
+			);
+			path = router;
+			sourceTree = "<group>";
+		};
+		C096BF8928996B9D0066690F /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				C096BF8A28996BC30066690F /* CalculatorProtocol.swift */,
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		C096BF8C28996D900066690F /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				C096BF8D28996DBA0066690F /* CalculatorPresenter.swift */,
+			);
+			path = presenter;
+			sourceTree = "<group>";
+		};
+		C096BF902899797D0066690F /* interactor */ = {
+			isa = PBXGroup;
+			children = (
+				C096BF912899799B0066690F /* CalculatorInteractor.swift */,
+			);
+			path = interactor;
+			sourceTree = "<group>";
+		};
+		C096BF9F28998C440066690F /* success-module */ = {
+			isa = PBXGroup;
+			children = (
+				C096BFA028998C510066690F /* view */,
+			);
+			path = "success-module";
+			sourceTree = "<group>";
+		};
+		C096BFA028998C510066690F /* view */ = {
+			isa = PBXGroup;
+			children = (
+				C096BFA128998C650066690F /* SuccessViewController.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -357,9 +435,12 @@
 				C096BF7B289951370066690F /* two-way-arrows.png in Resources */,
 				C096BF7F289958B90066690F /* settings.plist in Resources */,
 				C096BF7D2899527B0066690F /* arrow-down.png in Resources */,
+				C096BF9A289985850066690F /* Localizable.strings in Resources */,
 				C096BF3F289931100066690F /* LaunchScreen.storyboard in Resources */,
+				C096BFAF289999520066690F /* right-arrow.png in Resources */,
 				C096BF3C289931100066690F /* Assets.xcassets in Resources */,
 				C096BF3A2899310E0066690F /* Main.storyboard in Resources */,
+				C096BF9E28998C290066690F /* gree-tick.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,7 +465,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C096BF922899799B0066690F /* CalculatorInteractor.swift in Sources */,
+				C096BF8528996AAA0066690F /* CalculatorViewController.swift in Sources */,
+				C096BF8828996B630066690F /* CalculatorRouter.swift in Sources */,
 				C096BF6E289937310066690F /* ExchangeRateModel.swift in Sources */,
+				C096BF8B28996BC30066690F /* CalculatorProtocol.swift in Sources */,
+				C096BF8E28996DBA0066690F /* CalculatorPresenter.swift in Sources */,
 				C096BF70289938600066690F /* ExchangeRateInteractor.swift in Sources */,
 				C096BF372899310E0066690F /* ExchangeRateViewController.swift in Sources */,
 				C096BF7528993F3C0066690F /* ExchangeRateRouter.swift in Sources */,
@@ -392,6 +478,8 @@
 				C096BF332899310E0066690F /* AppDelegate.swift in Sources */,
 				C096BF6C289934710066690F /* ExchangeRateProtocols.swift in Sources */,
 				C096BF7228993BF10066690F /* HttpRequestHelper.swift in Sources */,
+				C096BFA228998C650066690F /* SuccessViewController.swift in Sources */,
+				C096BFB128999E940066690F /* ExchangeRateManager.swift in Sources */,
 				C096BF352899310E0066690F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -445,6 +533,14 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		C096BF9C289985850066690F /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C096BF9B289985850066690F /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -452,6 +548,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -512,6 +609,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";

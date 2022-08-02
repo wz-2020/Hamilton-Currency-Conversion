@@ -15,7 +15,7 @@ protocol ViewToPresenterProtocol {
     var router: PresenterToRouterProtocol? {get set}
     func startFetchingExchangeRate(from currency1: String, to currency2: String)
     func startFetchingAvailableCurrency() 
-    func showMovieController(navigationController:UINavigationController)
+    func showCalculatorController(navigationController:UINavigationController, amount: Double, rate: Double, fromCurrency: String, endCurrency: String)
 
 }
 
@@ -28,7 +28,8 @@ protocol PresenterToViewProtocol {
 
 protocol PresenterToRouterProtocol {
     static func createModule()-> ExchangeRateViewController
-    func pushToMovieScreen(navigationConroller:UINavigationController)
+    func pushToCalculatorScreen(navigationConroller:UINavigationController, amount: Double, rate: Double, fromCurrency: String, endCurrency: String)
+   
 }
 
 protocol PresenterToInteractorProtocol {

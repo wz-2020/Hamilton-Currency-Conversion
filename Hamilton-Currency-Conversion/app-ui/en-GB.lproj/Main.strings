@@ -1,0 +1,18 @@
+
+/* Class = "UILabel"; text = "precedes"; ObjectID = "GAA-q1-J00"; */
+"GAA-q1-J00.text" = "precedes";
+
+/* Class = "UIButton"; normalTitle = "Convert"; ObjectID = "HxB-5L-1K9"; */
+"HxB-5L-1K9.normalTitle" = "Convert";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Zgx-lZ-Xq8"; */
+"Zgx-lZ-Xq8.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Calculate"; ObjectID = "ajU-Hu-2UY"; */
+"ajU-Hu-2UY.normalTitle" = "Calculate";
+
+/* Class = "UILabel"; text = "Amount"; ObjectID = "bbP-nt-0lG"; */
+"bbP-nt-0lG.text" = "Amount";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "dC8-Bs-5e2"; */
+"dC8-Bs-5e2.text" = "Label";

@@ -14,8 +14,6 @@ class ExchangeRateViewController: UIViewController {
     var exchangeRateArrayList:Array<ExchangeRateModel> = Array()
     var availableFromCurrencyArray: [String] = []
     var availableToCurrencyArray: [String] = []
-    var exchangeRate: Double = 0
-    
     
     @IBOutlet weak var fromTextField: UITextField!
     @IBOutlet weak var toTextField: UITextField!
@@ -27,7 +25,7 @@ class ExchangeRateViewController: UIViewController {
         super.viewDidLoad()
         
         // self.title = "Notice-Module"
-        presentor?.startFetchingExchangeRate(from: "USD", to: "GBP")
+        
         presentor?.startFetchingAvailableCurrency()
         //showProgressIndicator(view: self.view)
         
@@ -42,22 +40,50 @@ class ExchangeRateViewController: UIViewController {
         
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ExchangeRateViewController.dismissKeyboard))
             view.addGestureRecognizer(tap)
+        /*
+        let currencies = fetchAvailableCurrency()
+        for currency in currencies {
+            ExchangeRateManager.exchangeRate(currency: currency) { exchangeRate in
+                
+            }
+        }*/
     }
+    /*
+    func fetchAvailableCurrency() -> [String] {
+        var propertyListFormat =  PropertyListSerialization.PropertyListFormat.xml
+        var plistData: [String: AnyObject] = [:]
+        let plistPath: String? = Bundle.main.path(forResource: "settings", ofType: "plist")!
+        let plistXML = FileManager.default.contents(atPath: plistPath!)!
+        do {//convert the data to a dictionary and handle errors.
+            plistData = try PropertyListSerialization.propertyList(from: plistXML, options: .mutableContainersAndLeaves, format: &propertyListFormat) as! [String:AnyObject]
+            if let currencyArray = plistData["supported_currency"] as? [String] {
+                 return currencyArray
+            } else {
+                return []
+            }
+        } catch {
+            return []
+        }
+  
+    }*/
     
     // tap screen dismiss keyboard.
     @objc func dismissKeyboard() {
         view.endEditing(true)
     }
     
-    
     @IBAction func calculatorButtonClicked(_ sender: Any) {
-        
+        if let fromCurrency = fromTextField.text, let toCurrency = toTextField.text {
+            presentor?.startFetchingExchangeRate(from: fromCurrency, to: toCurrency)
+        }
     }
 }
 
 extension ExchangeRateViewController:PresenterToViewProtocol{
     func showExchangeRate(exchangeRate: Double) {
-        self.exchangeRate = exchangeRate
+        if let amountString = amountTextField.text, let amount = Double(amountString), let fromCurrency = fromTextField.text, let endCurrency = toTextField.text {
+            presentor?.showCalculatorController(navigationController: navigationController!, amount: amount, rate: exchangeRate, fromCurrency: fromCurrency, endCurrency: endCurrency)
+        }
     }
     
     func showExchangeRateError() {
@@ -74,7 +100,7 @@ extension ExchangeRateViewController:PresenterToViewProtocol{
     }
     
     func showAvailableCurrencyError() {
-        
+
     }
 }
 
