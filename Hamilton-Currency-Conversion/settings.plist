@@ -15,5 +15,7 @@
 		<string>JPY</string>
 		<string>CNY</string>
 	</array>
+	<key>timer_max</key>
+	<integer>30</integer>
 </dict>
 </plist>

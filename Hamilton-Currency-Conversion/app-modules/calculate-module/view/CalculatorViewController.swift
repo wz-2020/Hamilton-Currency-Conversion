@@ -14,13 +14,19 @@ class CalculatorViewController: UIViewController {
     @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var toLabel: UILabel!
     @IBOutlet weak var fromLabel: UILabel!
+    var timer: Timer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         calculatorPresenter?.startCalculate()
         timerLabel.text = "\(String(start)) sec left"
-        Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(update), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(update), userInfo: nil, repeats: true)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        timer?.invalidate()
     }
     
     @objc func update() {
@@ -39,7 +45,9 @@ extension CalculatorViewController:PresenterToViewCalculatorProtocol{
         timerLabel.text = "\(String(count)) sec left"
         start = count
         if count == 0 {
-            calculatorPresenter?.navigateToExchangeRateScreen(navigationController: navigationController!)
+            if navigationController != nil {
+                calculatorPresenter?.navigateToExchangeRateScreen(navigationController: navigationController!)
+            }
         }
     }
     
