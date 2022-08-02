@@ -91,6 +91,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
     
+    func getTimerMax() -> Int {
+        var propertyListFormat =  PropertyListSerialization.PropertyListFormat.xml
+        var plistData: [String: AnyObject] = [:]
+        let plistPath: String? = Bundle.main.path(forResource: "settings", ofType: "plist")!
+        let plistXML = FileManager.default.contents(atPath: plistPath!)!
+        do {//convert the data to a dictionary and handle errors.
+            plistData = try PropertyListSerialization.propertyList(from: plistXML, options: .mutableContainersAndLeaves, format: &propertyListFormat) as! [String:AnyObject]
+           
+            return (plistData["timer_max"] as! Int) 
+        } catch {
+            return 0
+        }
+    }
+    
     // MARK: UISceneSession Lifecycle
 
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {

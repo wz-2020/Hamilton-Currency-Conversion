@@ -53,16 +53,19 @@ class CalculatorRouter:PresenterToRouterCalculatorProtocol{
         let router:PresenterToRouterCalculatorProtocol = CalculatorRouter()
         
         view.calculatorPresenter = presenter
+        view.start = (UIApplication.shared.delegate as! AppDelegate).getTimerMax()
         presenter.view = view as! PresenterToViewCalculatorProtocol
         presenter.router = router
         presenter.interactor = interactor
         interactor.presenter = presenter
-        
+ 
         return view
     }
     
     static var mainstoryboard: UIStoryboard{
         return UIStoryboard(name:"Main",bundle: Bundle.main)
     }
+    
+ 
 }
 

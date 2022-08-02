@@ -10,7 +10,7 @@ import UIKit
 class CalculatorViewController: UIViewController {
     
     var calculatorPresenter:ViewToPresenterCalculatorProtocol?
-    var start: Int = 30
+    var start: Int = 0
     @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var toLabel: UILabel!
     @IBOutlet weak var fromLabel: UILabel!
