@@ -13,24 +13,25 @@ class CalculatorRouter:PresenterToRouterCalculatorProtocol{
         navigationController.popViewController(animated: true)
     }
     
-    func presentToCalculatorSuccessScreen(viewController: CalculatorViewController, amount: Double, rate: Double, endCurrency: String) {
+    func presentToCalculatorSuccessScreen(viewController: CalculatorViewController, toAmount: String, rate: Double) {
         
         let vc = UIStoryboard(name:"Main",bundle: Bundle.main).instantiateViewController(withIdentifier: "SuccessViewController") as! SuccessViewController
-        
-        vc.text = NSLocalizedString("Success_Message", comment: "")
+        vc.text = String(format: NSLocalizedString("Success_Message", comment: ""), toAmount, String(format: "%.2f", rate))
         vc.modalPresentationStyle = .fullScreen
         viewController.present(vc, animated: true, completion: nil)
     }
     
-    func showCalculatorAlert(viewController: CalculatorViewController) {
-        let alert = UIAlertController(title: NSLocalizedString("Alert_Title", comment: ""), message: NSLocalizedString("Alert_Message", comment: ""), preferredStyle: UIAlertController.Style.alert)
+    func showCalculatorAlert(viewController: CalculatorViewController, fromAmount: String, toAmount: String, rate: Double) {
+        let title = NSLocalizedString("Alert_Title", comment: "")
+        let message = String(format: NSLocalizedString("Alert_Message", comment: ""), fromAmount, toAmount)
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
 
         let cancelButton = UIAlertAction(title: "Cancel", style: .cancel) { _ in
                 // cancel
         }
  
         let approveButton = UIAlertAction(title: "Approve", style: .default) { _ in
-            self.presentToCalculatorSuccessScreen(viewController: viewController, amount: 0, rate: 0, endCurrency: "")
+            self.presentToCalculatorSuccessScreen(viewController: viewController, toAmount: toAmount, rate: rate)
         }
 
         alert.addAction(cancelButton)

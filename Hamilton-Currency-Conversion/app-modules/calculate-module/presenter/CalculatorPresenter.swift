@@ -30,9 +30,9 @@ class CalculatorPresenter:ViewToPresenterCalculatorProtocol{
     func startCountDown(count: Int) {
         interactor?.countDown(count: count)
     }
-    
-    func showConfirmConvertAlert(viewController: CalculatorViewController) {
-        router?.showCalculatorAlert(viewController: viewController)
+  
+    func showConfirmConvertAlert(viewController: CalculatorViewController, fromAmount: String, toAmount: String, rate: Double) {
+        router?.showCalculatorAlert(viewController: viewController, fromAmount: fromAmount, toAmount: toAmount, rate: rate)
     }
     
     func navigateToExchangeRateScreen(navigationController: UINavigationController) {

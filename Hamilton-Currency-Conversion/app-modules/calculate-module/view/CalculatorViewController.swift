@@ -28,7 +28,9 @@ class CalculatorViewController: UIViewController {
     }
     
     @IBAction func convertButtonClicked(_ sender: Any) {
-        calculatorPresenter?.showConfirmConvertAlert(viewController: self)
+        if let fromAmount = fromLabel.text, let toAmount = toLabel.text {
+            calculatorPresenter?.showConfirmConvertAlert(viewController: self, fromAmount: fromAmount, toAmount: toAmount, rate: calculatorPresenter?.rate ?? 0)
+        }
     }
 }
  

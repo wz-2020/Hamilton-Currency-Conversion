@@ -24,8 +24,6 @@ class ExchangeRateViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // self.title = "Notice-Module"
-        
         presentor?.startFetchingAvailableCurrency()
         //showProgressIndicator(view: self.view)
         

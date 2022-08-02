@@ -6,7 +6,7 @@
   
 */
 "Alert_Title" = "Approval Required";
-"Alert_Message" = "You are about to get %s for %s. Do you approve this transaction?";
-"Success_Message" = "Great now you have %s in your account
+"Alert_Message" = "You are about to get %@ for %@. Do you approve this transaction?";
+"Success_Message" = "Great now you have %@ in your account
 
-Your convertion rate was %s";
+Your convertion rate was 1/%@";
